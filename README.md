@@ -1,6 +1,6 @@
 # SHADOW Banking Interface
 
-Welcome to the **SHADOW Banking Interface** – une page Web statique simple qui sera utilisée dans mon script shadow_banking sur FiveM
+Welcome to the **SHADOW Banking Interface** – a simple static web page that will be used in my shadow_banking script on FiveM
 
 ---
 

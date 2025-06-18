@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Deposit - SHADOW Banking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="assets/profile-picture.png" alt="Profile Picture">
+            <h2>Name</h2>
+            <p>LS25421935</p>
+            <p>Account Type</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="deposit.html">Deposit</a></li>
+                <li><a href="withdraw.html" class="active">Withdraw</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="account-info.html">Account Info</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <p>Last login: Today, 15:42</p>
+        </footer>
+    </div>
+
+    <div class="main-panel">
+        <header>
+            <h1>Withdraw</h1>
+        </header>
+        <section class="deposit-form">
+            <h2>Make a Withdraw</h2>
+            <form action="#" method="post">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount" required min="0">
+
+                <div class="preset-buttons">
+                    <button type="button" onclick="document.getElementById('amount').value = 100">100</button>
+                    <button type="button" onclick="document.getElementById('amount').value = 500">500</button>
+                    <button type="button" onclick="document.getElementById('amount').value = 1000">1000</button>
+                    <button type="button" onclick="document.getElementById('amount').value = 5000">5000</button>
+                </div>
+
+                <button type="submit">Withdraw</button>
+            </form>
+        </section>
+        <section class="deposit-advertisement">
+            <h2>Advertisement</h2>
+            <div class="advertisement">
+                <p>101% of people who take out a paid account become rich !</p>
+                <button onclick="window.location.href='account-info.html'">Upgrade Now</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

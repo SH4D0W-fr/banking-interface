@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Transactions - SHADOW Banking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="assets/profile-picture.png" alt="Profile Picture">
+            <h2>Name</h2>
+            <p>LS25421935</p>
+            <p>Account Type</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="deposit.html">Deposit</a></li>
+                <li><a href="withdraw.html">Withdraw</a></li>
+                <li><a href="transactions.html" class="active">Transactions</a></li>
+                <li><a href="account-info.html">Account Info</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <p>Last login: Today, 15:42</p>
+        </footer>
+    </div>
+
+    <div class="main-panel">
+        <header>
+            <h1>Transactions</h1>
+        </header>
+        <section class="transactions-list">
+            <h2>Transaction History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025-06-17</td>
+                        <td>Deposit</td>
+                        <td>$500</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>2025-06-16</td>
+                        <td>Withdrawal</td>
+                        <td>$200</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>2025-06-15</td>
+                        <td>Deposit</td>
+                        <td>$1,000</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

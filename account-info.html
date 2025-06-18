@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Account Info - SHADOW Banking</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function updateAccountType(type) {
+            document.getElementById('selected-account-type').innerText = type;
+        }
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="assets/profile-picture.png" alt="Profile Picture">
+            <h2>Name</h2>
+            <p>LS25421935</p>
+            <p>Account Type</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="deposit.html">Deposit</a></li>
+                <li><a href="withdraw.html">Withdraw</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="account-info.html" class="active">Account Info</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <p>Last login: Today, 15:42</p>
+        </footer>
+    </div>
+
+    <div class="main-panel">
+        <header>
+            <h1>Account Information</h1>
+        </header>
+        <section class="account-info">
+            <div class="account-details">
+                <h2>Personal Details</h2>
+                <p><strong>Full name:</strong> John Doe</p>
+                <p><strong>Gender:</strong> M</p>
+                <p><strong>DOB:</strong> 01/01/2000</p>
+                <p><strong>Job:</strong> Unemployed</p>
+            </div>
+            <div class="account-details">
+                <h2>Account Details</h2>
+                <p><strong>Account Number:</strong> LS25421935</p>
+                <p><strong>Account Type:</strong> <span id="selected-account-type">Premium</span></p>
+                <p><strong>Created:</strong> January 15, 2023</p>
+                <p><strong>Status:</strong> Active</p>
+            </div>
+        </section>
+        <section class="account-type-selection">
+            <h2>Choose Your Account Type</h2>
+            <div class="account-type-buttons">
+                <div class="account-type-card">
+                    <h3>Standard</h3>
+                    <ul>
+                        <li>$10,000 weekly deposit limit</li>
+                        <li>Delayed transaction</li>
+                        <li>Free</li>
+                    </ul>
+                    <p class="price">$0/month</p>
+                    <button onclick="updateAccountType('Standard')">Select</button>
+                </div>
+                <div class="account-type-card">
+                    <h3>Premium</h3>
+                    <ul>
+                        <li>$25,000 weekly deposit limit</li>
+                        <li>Fast transactions</li>
+                        <li>Withdraw privacy</li>
+                    </ul>
+                    <p class="price">$30/month</p>
+                    <button onclick="updateAccountType('Premium')">Select</button>
+                </div>
+                <div class="account-type-card">
+                    <h3>Prestige</h3>
+                    <ul>
+                        <li>$50,000 weekly deposit limit</li>
+                        <li>Instant transactions</li>
+                        <li>Every transactions privacy</li>
+                    </ul>
+                    <p class="price">$50/month</p>
+                    <button onclick="updateAccountType('Prestige')">Select</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
